@@ -12,4 +12,6 @@ BookVerse was my bachelors project , which  i made using HTML,CSS and JavaScript
 <img width="1851" height="975" alt="image" src="https://github.com/user-attachments/assets/7db01b50-97b1-4939-a680-dca84b448be7" />
 
 <img width="1856" height="968" alt="image" src="https://github.com/user-attachments/assets/e79e47b6-640c-4fb8-812c-9eb26b72b55f" />
-![Uploading image.png…]()
+
+<img width="1835" height="605" alt="image" src="https://github.com/user-attachments/assets/d73949b0-dbc3-4a53-ad0d-eb4d49386e2b" />
+
