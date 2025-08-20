@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    /*overflow: hidden;*/ /* Add overflow: hidden to prevent slider overflow issues */
+}
+
+.Herocarousel {
+    width: 100%; /* Change from 99vw to 100% to ensure no overflow */
+    height: 80vh;
+    position: relative;
+    z-index: 0;
+}
+
+ .sh {
+    top: 0;
+    width: 100%;/* Change from 99vw to 100% to ensure no overflow */
+    height: 80vh;
+    position: absolute;
+    box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 0.699);
+    z-index: 1;
+    border-radius:13px;
+} 
+
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 100%);
+    z-index: 0;
+    user-select: none;
+    
+    
+}
+
+.slider .slide.active {
+    clip-path: circle(200% at 0 50%);
+    transition: 0s;
+}
+
+.slider .slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:13px;
+}
+
+.slider .slide .info {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    
+    width: 100.1%;
+    height: 29vh;
+    
+    bottom: 0px;
+   
+    padding-left: 5vw;
+    padding-top: 3vh;
+   
+    background-color: rgba(0, 0, 0, 0.37);
+    opacity: 1;
+    /* border-radius: 10px; */
+}
+
+.slider .slide .info h2 {
+  
+  text-shadow:  
+    -1px -1px 0 rgb(0,0,0, 0.315), 
+    1px -1px 0 rgb(0,0,0, 0.315),
+   -1px  1px 0 rgb(0,0,0, 0.315),
+    1px  1px 0 rgba(0, 0, 0, 0.315);
+    font-size:3.5vh !important;
+    font-weight: 400;
+    font-family: "Patrick Hand", cursive;
+    
+    font-size: x-large;
+    margin-bottom: 1%;
+    color:rgb(255, 211, 16);
+}
+
+
+.slider .slide .info p{
+  font-size: 2.5vh;
+  font-weight: 500;
+  font-family: 'lato', sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: "Patrick Hand", cursive;
+}
+
+.navigation{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.slider:hover .navigation{
+  opacity: 1;
+}
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: rgb(245, 216, 89);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+.prev-btn:hover, .next-btn:hover{
+  color: rgb(206, 170, 9);
+}
+
+.prev-btn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(245, 216, 89, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.next-btn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: rgb(245, 216, 89, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  margin-top: 77vh;
+}
+
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 14px;
+  margin: 0 6px;
+  border-radius: 50px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background: rgb(245, 216, 89);
+}
+@media (min-width: 100px) and (max-width: 1260px)
+{
+    .Herocarousel, .sh{
+       height : 40% !important;
+       max-height : 40% !important;
+    }
+}

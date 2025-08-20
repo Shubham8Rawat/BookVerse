@@ -1,0 +1,1 @@
+thumbnails.(first page ) of uploaded books pdf , will automatically get extracted as jpg and used as a thumbnail and stored here..

@@ -1,0 +1,3 @@
+<a href="<?php echo isset($_SESSION['user_id']) ? $target_dir . $OGfile : '#' ?>"
+
+in line 159 of view.php i can place this to change the mode for who the video is being embedded...

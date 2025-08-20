@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.login-container, .register-container {
+  
+  z-index: 9999; /* any high value */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.login-box .register-box{
+  background-color: rgb(7, 7, 7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.blur-background {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5); /* Darkened background with 50% opacity */
+  display: none; /* Initially hidden */
+}

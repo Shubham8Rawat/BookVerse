@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.product_container {
+    font-family: "Oswald";
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    /* text-shadow: 2px 2px 2px #0c0c00;   */
+}
+
+.item_pic{
+    padding-left: 15%;
+    float: left;
+  width: 50%;
+}
+ .item_pic img{
+    width: 300px;
+    height: calc(width + 200px); 
+}
+
+.item_info{
+    float: right;
+  width: 50%;
+  padding-right:10% ;
+}
+
+.item_heading {
+  font-size: 3vh;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+.item_heading .tags{
+  font-size: 1.7vh;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+.dwn_label{
+  font-size: 1.7vh;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.download{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.download a{
+  font-size :3vh;
+  text-decoration: none;
+  padding-left: 30%;
+  color:rgb(61, 253, 2) !important;
+}

@@ -1,0 +1,79 @@
+.flickity-prev-next-button {
+        background-color: #050505e8 !important; /* Background color */
+    color: #ffdd20cc !important; /* Text color */
+   
+    font-size: 20px;
+    line-height: 40px;
+  }
+.flickity-button:hover {
+    background: #000000 !important;
+    color: #ffd900 !important;
+}
+
+
+.carousel {
+  background: #00000057;
+   /*i can remove this  */
+  width: 80%;
+  height: 280px;
+  margin-left:10%;
+  border-radius: 6px !important;
+}
+
+.carousel-cell {
+  position: relative;
+  width: 17%;
+  height: 270px;
+  margin-right: 5px;
+  padding: 0.3%;
+  background-color: rgba(0, 0, 0, 0.685);
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+.carousel-cell.is-selected {
+  border-radius: 4%;
+  background-color: #0000009a;
+  border: 2px solid #242424;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: 80%;
+  border: 1px solid #333;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.carousel-cell #browseButton {
+  width: 50%; /* Set the desired width */
+  height: auto; /* Let the height adjust proportionally */
+  display: block;
+  margin: 3rem auto;
+  border:none;
+  /* mix-blend-mode: multiply;  */
+  /* This blends the overlay color with the image */
+    /* opacity: 0.5; */
+}
+
+
+/* cell number */
+.carousel-cell:before {
+  content: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+  z-index: 1;
+}
+
+/* Style for titles below images */
+.item-title {
+  font-size:16px;
+  font-weight:550;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 5px; /* Adjust as needed for spacing */
+}

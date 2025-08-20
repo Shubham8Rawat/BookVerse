@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+login-container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection{
+  color: #fff;
+  background: #3cc929ab;
+}
+.wrapper{
+  background:#000000cb;
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.712);
+}
+.wrapper header{
+  text-shadow:  
+    -1px -1px 0 #1fc709, 
+    1px -1px 0 #1fc709,
+   -1px  1px 0 #1fc709,
+    1px  1px 0 #1fc709;
+  display: block;
+  padding :0;
+  font-size: 50px;
+  font-weight: 600;
+  color:#fff;
+}
+.wrapper form{
+  margin: 40px 0;
+}
+.wrapper form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrapper form .field.shake{ 
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+.wrapper form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+.wrapper form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: #fff;
+  caret-color: #009118;
+  border-radius: 5px;
+  border: 2px solid #146e00;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+.wrapper .sign-txt{
+    color:#ffffff;
+}
+
+.wrapper form .field input:focus,
+.wrapper form .field.valid input{
+  border-color: #009118;
+}
+.wrapper form .field.shake input,
+.wrapper form .field.error input{
+  border-color: #ff0019e1;
+}
+.wrapper .field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background:white;
+}
+.wrapper .input-area .icon{
+  left: 15px;
+  color:#00aa1c;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #ff0019e8;
+}
+.wrapper form input:focus ~ .icon,
+.wrapper form .field.valid .icon{
+  color: #009118;
+}
+.wrapper form .field.shake input:focus ~ .icon,
+.wrapper form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+.wrapper form input::placeholder{
+  color: #047500;
+  font-size: 17px;
+}
+.wrapper form .field .error-txt{
+  color: #fc0019ce;
+  text-align: left;
+  margin-top: 5px;
+}
+.wrapper form .field .error{
+  display: none;
+}
+.wrapper form .field.shake .error,
+.wrapper form .field.error .error{
+  display: block;
+}
+.wrapper form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #009118;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+.wrapper form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #009118;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.wrapper form input[type="submit"]:hover{
+  background: #009118
+}
